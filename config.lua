@@ -1,6 +1,6 @@
--- Aceasta resursa a fost facuta de plesalex100#7387
--- Va rog sa o respectati, sa nu o vinde-ti sau postati fara permisiunea mea
--- Aceasta resursa a pornit de la: https://codepen.io/AdrianSandu/pen/MyBQYz
+-- This resource was made by plesalex100#7387
+-- Please respect it, don't repost it without my permission
+-- This Resource started from: https://codepen.io/AdrianSandu/pen/MyBQYz
 
 Cfg = {}
 
