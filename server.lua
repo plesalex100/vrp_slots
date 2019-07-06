@@ -1,6 +1,6 @@
--- Aceasta resursa a fost facuta de plesalex100#7387
--- Va rog sa o respectati, sa nu o vinde-ti sau postati fara permisiunea mea
--- Aceasta resursa a pornit de la: https://codepen.io/AdrianSandu/pen/MyBQYz
+-- This resource was made by plesalex100#7387
+-- Please respect it, don't repost it without my permission
+-- This Resource started from: https://codepen.io/AdrianSandu/pen/MyBQYz
 
 
 local Tunnel = module("vrp", "lib/Tunnel")
@@ -13,16 +13,16 @@ RegisterServerEvent("ples-slots:catiLeiBagi")
 AddEventHandler("ples-slots:catiLeiBagi", function()
   local user_id = vRP.getUserId({source})
   if user_id then
-    vRP.prompt({source, "Cati bani bagi ? ( multiplu de 50 ): ", "", function(source, amount)
+    vRP.prompt({source, "How much you bet ? ( multiple of 50 ): ", "", function(source, amount)
       amount = parseInt(amount)
       if amount % 50 == 0 and amount >= 50 then
         if vRP.tryPayment({user_id, amount}) then
           TriggerClientEvent("ples-slots:bagXLei", source, amount)
         else
-          vRPclient.notify(source, {"~r~Nu ai suficienti bani"})
+          vRPclient.notify(source, {"~r~Not enought money"})
         end
       else
-        vRPclient.notify(source, {"Trebuie sa introduci un multiplu de 50.~n~~y~ex: 100, 350, 2500"})
+        vRPclient.notify(source, {"You have to insert a multiple of 50.~n~~y~ex: 100, 350, 2500"})
       end
     end})
   end
@@ -35,9 +35,9 @@ AddEventHandler("ples-slots:aiCastigat", function(amount)
     amount = tonumber(amount)
     if amount > 0 then
       vRP.giveMoney({user_id, amount})
-      TriggerClientEvent("chatMessage", source, "^1Pacanele^7: Ai iesit de la pacanele cu ^2$"..amount.."^7 nu e rau deloc!")
+      TriggerClientEvent("chatMessage", source, "^1Slots^7: You won ^2$"..amount.."^7 not bad at all!")
     else
-      TriggerClientEvent("chatMessage", source, "^1Pacanele^7: Din pacate ^1ai pierdut ^7toti banii, poate data viitoare.")
+      TriggerClientEvent("chatMessage", source, "^1Slots^7: Unfortunately you've ^1lost ^7all the money, maybe next time.")
     end
   end
 end)
