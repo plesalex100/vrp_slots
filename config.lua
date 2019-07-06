@@ -1,0 +1,14 @@
+-- Aceasta resursa a fost facuta de plesalex100#7387
+-- Va rog sa o respectati, sa nu o vinde-ti sau postati fara permisiunea mea
+-- Aceasta resursa a pornit de la: https://codepen.io/AdrianSandu/pen/MyBQYz
+
+Cfg = {}
+
+Cfg.blipsEnabled = true
+
+Cfg.Pacanele = {
+  {x = 447.90658569336, y = -973.33172607422, z = 30.689601898194},
+  {x = -1669.9306640625, y = -1053.84069824219, z = 13.1539430618286},
+	{x = -1688.43811035156, y = -1073.62536621094, z = 13.1521873474121},
+	{x = -2195.1352539063, y = 4288.7290039063, z = 49.173923492432}
+}
