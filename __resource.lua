@@ -15,5 +15,7 @@ server_scripts {
 files {
   'html/ui.html',
   'html/script.js',
-  'html/design.css'
+  'html/design.css',
+  'html/img/*',
+  'html/audio/*'
 }
